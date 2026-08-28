@@ -14,12 +14,7 @@ void loop(){
     int valorFotoresistor = analogRead(fotoresistorPin); // Lee el valor del fotoresistor.
     // El valor del fotoresistor puede variar entre 0 (completamente oscuro) y 1023 (completamente iluminado).
 
-    // Si el valor del fotoresistor es menor a 500, enciende el LED, de lo contrario, apágalo
-    if (valorFotoresistor < 500) {
-        digitalWrite(LEDPin, HIGH); // Enciende el LED
-    } else {
-        digitalWrite(LEDPin, LOW); // Apaga el LED
-    }
+    //TODO: Encender el LED si el valor del fotoresistor es menor a 500, apagarlo en caso contrario
 
     delay(100); // Espera un poco antes de la siguiente lectura
 }

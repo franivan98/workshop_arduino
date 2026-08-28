@@ -39,12 +39,7 @@ void setup() {
 void loop() {
     float distance = distancia_Ultrasonico(); // Calcula la distancia utilizando el sensor ultrasonico
 
-    // Si la distancia es menor a 20 cm, enciende el LED, de lo contrario, apágalo
-    if (distance < 20) {
-        digitalWrite(LED_PIN, HIGH); // Enciende el LED
-    } else {
-        digitalWrite(LED_PIN, LOW); // Apaga el LED
-    }
-
+    //TODO: Encender el LED si la distancia es menor a 10 cm, apagarlo en caso contrario
+    
     delay(100); // Espera un poco antes de la siguiente medición
 }
